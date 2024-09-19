@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@font-face {
+  font-family: "ruberiod-boldh1";
+  src: url(../fonts/Ruberoid/Ruberoid-Bold.otf);
+}
+@font-face {
+  font-family: "ruberiod-bold";
+  src: url(../fonts/Ruberoid/Ruberoid-Light.otf);
+}
+
+
+*{
+  font-family: "ruberiod-bold";
+
+}
+.fontfamily{
+  font-family: "ruberiod-bold";
+}
+h1{
+  font-family: "ruberiod-bold";
+  font-weight: 700;
+
+
+}
+
+h2{
+  font-family: "ruberiod-boldh1";
+
+
+}
+
+:root {
+  --orange: #FBB039;
+  --green: #4BB00B;
+  --black: #0E0E0E;
+  --lightblu: #153462;
+  --lightsky: #C8D8F1;
+  --lightgray: #C8D8F1;
+  --white:#fff;
+  --lightyell: #F8F7F0;
+  --popcolor: #1616168d;
+
+
+}
+.white{
+  background-color: var(--white);
+}
+
+.bgpop {
+  background-color: var(--popcolor);
+}
+
+.lightwhite {
+  color: var(--lightyell);
+}
+
+.lightyell {
+  background-color: var(--lightyell);
+}
+
+.bgblue {
+  background-color: var(--lightblu);
+
+}
+
+.green {
+  color: var(--green);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.bgorange {
+  background-color: var(--orange);
+}
+
+.home {
+  background-image: url(../img/resources/Mask\ Group\ 1@2x.png);
+}
+
+.bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.size {
+  height: 100vh;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.bgwhite {
+  background-color: #F8F7F0;
+}
+
+/* font family for double outline */
+.doubleborder {
+  font-family: "Londrina Outline", sans-serif;
+}
+
+.fontsize {
+  font-size: 13px;
+}
+
+.greenimage1{
+  width: 40px;
+  height: 40px;
+
+}
+
+.topnegative{
+  margin-top: -50px;
+}
+.greenimage {
+  width: 50px;
+  height: 50px;
+}
+.redimage{
+  width: 70px;
+  height: 70px;
+}
+
+.small-heading {
+  font-size: 1rem;
+}
+
+.home-tab,
+.menu-tab :hover {
+  color: var(--green) !important;
+
+}
+
+.profile-height {
+  height: 90%;
+}
+
+.team-image-size {
+  height: 100%;
+  width: 35%;
+
+
+}
+
+.choose-us-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.width {
+  width: 80%;
+}
+
+.work-process {
+  background-image: url(../img/resources/Group\ 129.png);
+  height: 100vh;
+
+}
+
+.width {
+  width: fit-content !important;
+}
+
+.greadent {
+  background: transparent url('../img/resources/Mask\ Group\ 9.png') 0% 0% no-repeat padding-box !important;
+
+  background: transparent linear-gradient(206deg, #8CE0FF 0%, #EBFF84 100%) 0% 0% no-repeat padding-box !important;
+}
+
+.greadent1 {
+  background: transparent url('../img/resources/Mask\ Group\ 9.png') 0% 0% no-repeat padding-box !important;
+  /* opacity: 0.08; */
+}
+
+
+.service-card:hover {
+  background-color: var(--lightblu);
+  color: white !important;
+
+}
+
+.card-text-1 {
+  /* align-items: flex-start !important; */
+  text-align: left !important;
+
+}
+
+.grid {
+  grid-template-columns: auto auto auto auto auto;
+  
+
+}
+
+.our-testimonal {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/resources/Image\ 8.png);
+
+}
+
+.choose-us img {
+  margin-right: 10px !important;
+
+  width: 25px !important;
+  height: 25px !important;
+}
+
+@media (max-width:768px) {
+  .card-header .card {
+    width: 100% !important;
+  }
+  .hidden-border-none::after{
+    content: " " !important;
+    background-color: none;
+    height: 0px !important;
+    width: 0px !important;
+    position: absolute;
+    right: 0;
+    top: 0px !important;
+  
+  }
+
+  .servic-text {
+    width: 100% !important;
+  }
+
+  .solarroof {
+    width: 100% !important;
+  }
+
+  .solar-text {
+    width: 100% !important;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .menu-tab {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(147, 133, 133);
+    display: block !important;
+    position: absolute !important;
+    left: -200%;
+    top: 100%;
+
+
+
+  }
+  
+  .closebtn1 {
+    position: absolute;
+    left: 3%;
+    top: 2%;
+  }
+
+  #menut {
+    position: relative;
+  }
+
+
+  .bar {
+    display: block !important;
+
+  }
+
+  .menu-tab li {
+    margin: 20px;
+  }
+
+  .team-image-size {
+    width: 100% !important;
+  }
+
+  .workers-image {
+    margin: 10px 0px !important;
+    width: 100% !important;
+  }
+  .service-card{
+    margin-top: 1rem;
+    padding-bottom: .5rem;
+  }
+
+}
+
+.open {
+  top: 100%;
+  left: 0%;
+
+
+}
+
+
+@media (max-width:580px) {
+  .card-header .card {
+    width: 100% !important;
+  }
+  .hidden-border-nonesm::after{
+    content: " " !important;
+    background-color: none;
+    height: 0px !important;
+    width: 0px !important;
+    position: absolute;
+    right: 0;
+    top: 0px !important;
+  
+  }
+}
+
+/* slider of css */
+.hidden-border {
+  position: relative;
+}
+
+.hidden-border::after {
+  content: " ";
+  background-color: rgba(52, 48, 48, 0.597);
+  height: 70px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+
+
+
+
+}
+
+.precentage-box{
+  margin-top: -30px !important;
+}
+
+.toggle:hover{
+  /* border: 2px solid red; */
+  /* fill: #FBB039; */
+  border-radius: 50%;
+  color: #FBB039;
+  background-color: var(--orange);
+  cursor: pointer;
+}

@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+
+</head>
+
+<body>
+  <!-- nav bar  -->
+
+  <nav class="d-flex container  justify-content-between align-items-center p-2 py-2 ">
+    <div><img class="  " style="width: 60px; height: 50px; cursor: pointer;" src="./img/Capture.JPG" alt="image of ....."></div>
+
+
+    <ul id="menut" class="d-md-flex gap-md-3 gap-3 fs-20 h-auto menu-tab ">
+
+
+
+      <button class=" closebtn1 d-md-none rounded bgblue border border-success px-2 " id=" closebtn"><i
+          class="fa-solid fa-x fs-2 text-dark cross "></i></button>
+
+
+      <li class="list-group-item "><a class=" text-decoration-none text-dark  text-capitalize"
+          href="./index.html">home</a>
+      </li>
+      <li class="list-group-item"><a class="text-decoration-none text-dark text-capitalize" href="menu.html">about</a>
+      </li>
+      <li class="list-group-item"><a class="text-decoration-none text-dark text-capitalize"
+          href="service.html">service</a></li>
+      <li class="list-group-item"><a class="text-decoration-none text-dark text-capitalize"
+          href="./product.html">product</a></li>
+      <li class="list-group-item"><a class="text-decoration-none text-dark text-capitalize" href="">blog</a></li>
+      <li class="list-group-item"><a class="text-decoration-none text-dark text-capitalize"
+          href="./contact.html">contact</a></li>
+      <li class="list-group-item"><a
+          class="text-decoration-none text-dark text-capitalize text-bold p-2  font-weight-bold" href="tel:+91-8866477774"
+          style="background:#FBB039; "> <img src="./img/resources/telephone-fill (2).png" alt="image of ....."
+            srcset="">+91-8866477774</a></li>
+
+
+    </ul>
+    <ul class="d-md-none">
+      <button class="rounded border border-success px-2 menubtn" id="barbutton"><i
+          class="fa-solid fa-bars-staggered fs-2"></i></button>
+    </ul>
+
+  </nav>
+  <!-- home page -->
+  <section class="home bg size d-flex flex-column justify-content-center align-items-center">
+    <div class="   w-75   text-center ">
+      <h1 class="text-light  ">A New Powerful Perspective <span class=" d-block  text-success"><b class="text-light">
+            in</b> Solar Energy </span></h1>
+      <p class="text-light">Affordable solar energy solution for your home or office</p>
+    
+      <!-- / -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn bgorange rounded-0 m-3 p-3 " data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        Enquiry
+        Now<i class="fa-solid fa-arrow-right text-dark ms-4"></i>
+      </button>
+
+      <!-- pop  Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Enquiry Form</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class=" w-100 solarroof    bg-light p-4" style="height: fit-content;">
+                <!-- <h4>Enquiry Form</h4> -->
+                <form id="contact_form" name="contact_form" method="post">
+                  
+                  <div class="mb-3">
+                    <label for="name_input" class=" w-100  text-start">Name</label>
+                    <input type="text" required maxlength="50" class="form-control" id="name_input" name="name"
+                      placeholder="Name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone_input"class=" w-100  text-start">Phone</label>
+                    <input type="tel" required maxlength="50" class="form-control" id="phone_input" name="Phone"
+                      placeholder="Phone">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email_addr" class=" w-100  text-start">Email address</label>
+                    <input type="email" required maxlength="50" class="form-control" 
+                    id="email_addr" name="email" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class=" w-100  text-start">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                  </div>
+                  <div class="my-4">
+                    <div class="g-recaptcha" data-sitekey="6LchOyEUAAAAAPo9l0WmIgFkGu5D6Gyq-MjsIHS1"></div>
+                  </div>
+                  <button type="submit" class="btn w-100  fw-bold bgorange px-4">Get in Touch</button>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+
+
+
+
+      <button class="p-3 w-md-25 my-md-5 border-0 "><a
+          class=" text-dark text-decoration-none d-flex justify-content-between align-items-center " href="">More
+          Services<i class="fa-solid fa-arrow-right ms-4"></i></a></button>
+    </div>
+
+
+  </section>
+
+  <!-- absoulte part to heree  -->
+  <div class="container  p-1  " style="margin-top: -70px;">
+    <div class="row  absulte-part bg-light p-4">
+      <div class="  col-md-3 col-sm-5 col-12  text-center hidden-border-nonesm  hidden-border flex  gap-3  ">
+        <img style="width: 40px;" src="./img/resources/calculate.png" alt="image of .....">
+        <p>Calculate your <br> Savings</p>
+      </div>
+      <div class="text-center hidden-border   col-md-3 col-sm-5 col-12  flex  gap-3  "><img style="width: 50px;"
+          src="./img/resources/Group 5.png" alt="image of .....">
+        <p>Installation:<br> How it Works?</p>
+      </div>
+      <div class=" col-md-3 col-sm-5 col-12  text-center  hidden-border-nonesm  hidden-border flex  gap-3 ">
+        <img style="width: 50px;" src="./img/resources/Group 7.png" alt="image of .....">
+        <p>Our Warranty<br> Policy</p>
+      </div>
+      <div class="text-center   p-0 m-0 col-md-3  flex col-sm-5 col-12  gap-3 ">
+        <img style="width: 50px;" src="./img/resources/Group 9.png" alt="image of .....">
+        <p class="p-0">Additional Power <br> for your needs</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- second page  -->
+  <section class=" container-fluid py-5  solarroof  ">
+    <div class="container solarroof   d-md-flex flex-wrap    h-75  w-75 ">
+      <div class=" d-flex   w-50 gap-3  solarroof ">
+        <img class="w-50" src="./img/resources/Mask Group 2@2x.png" alt="image of .....">
+        <div class="w-50   ">
+          <div
+            class="  d-flex  bgorange  mb-2 p-3 flex-column justify-content-center align-items-center rounded precentage-box  ">
+            <h3 class="fs-1 fw-bold text-light">70%</h3>
+            <p class="text-light ">Emergency Efficient</p>
+          </div>
+          <img class="w-100 " src="./img/resources/Mask Group 3@2x.png" alt="image of .....">
+        </div>
+
+      </div>
+      <div class=" w-50 px-4    solar-text ">
+        <p class="green fs-6 ">ABOUT SOLAR ROOFTOP</p>
+        <h3 class="fs-4"><b>Get the Solar Advantage,</b> All We Need Is To Use It Well!</h3>
+        <p class="fontsize fs-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed de ut labore et dolore
+          magna
+          aliqua.</p>
+        <div class="d-flex   fs-20 p-1  " style="width: 100%; ">
+          <img class="greenimage" src="./img/resources/Group 31@2x.png" alt="image of .....">
+          <div class="p-0  ms-3">
+            <h5 class="my-0 fw-normal small-heading 
+            ">Environmental Impact</h5>
+            <p class="my-0  fontsize lh-1">Consectetur adipisicing elit sed de ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="d-flex  fs-20  p-1 " style="width: 100%; ">
+          <img class="greenimage" src="./img/resources/Group 91.png" alt="image of .....">
+          <div class="p-0 ms-3">
+            <h5 class="my-0 fw-normal small-heading">Economic Benefits</h5>
+            <p class="my-0  fontsize">Consectetur adipisicing elit sed de ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="d-flex   fs-20  p-1 " style="width: 100%; ">
+          <img class="greenimage" src="./img/resources/Group 24.png" alt="image of .....">
+          <div class="p-0 ms-3">
+            <h5 class="my-0 fw-normal small-heading ">Energy Independence</h5>
+            <p class="my-0  fontsize">Consectetur adipisicing elit sed de ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <button class=" border-0   p-1 my-5   px-3 w-md-25  border-none " style="background-color : #FBB039;"><a
+            class="  text-dark d-flex justify-content-between align-items-center text-decoration-none p-2 "
+            href="">Enquiry
+            Now<i class="fa-solid fa-arrow-right text-dark ms-2"></i></a></button>
+
+
+
+      </div>
+
+    </div>
+
+
+  </section>
+  <!-- third page -->
+  <section class="p-5 lightyell flex flex-md-column">
+    <p class="text-success">OUR SERVICES</p>
+    <h3><b>Unlock the potential of the</b> sun with solar energy!</h3>
+    <div class=" servic-text  w-50   text-center">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed de ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="card-header container  p-2  d-md-flex justify-content-evenly  flex-wrap  w-100   "
+      style="width:800px  ;">
+
+      <div class="card  bgblue    ps-2     " style="width:30%  ;">
+        <div class="card-icon m-2   w-  b d-flex justify-content-between align-items-center  ">
+          <div class="border redimage flex  rounded-circle">
+            <img class="greenimage1" src="./img/resources/Group 5.png" alt="image of .....">
+
+          </div>
+          <div>
+            <img src="./img/resources/Path 54.png" alt="image of .....">
+
+          </div>
+
+        </div>
+        <p class="lightwhite ">Solar Installation</p>
+        <a href=""
+          class="text-decoration-none lightwhite  fs-6 w-50 w-md-50 fw-light text-start  d-flex justify-content-evenly align-items-center">Read
+          more <i class=" font-weight-lighter lightwhite fa-solid fa-arrow-right-long  lightwhite"></i></a>
+
+
+      </div>
+
+      <div class="card  service-card   ps-2  " style="width: 30%;">
+        <div class="card-icon m-2    d-flex justify-content-between align-items-center ">
+          <div class="border redimage flex  rounded-circle">
+            <img class="greenimage1" src="./img/resources/Group 41.png" alt="image of .....">
+
+          </div>
+          <div>
+            <img src="./img/resources/Path 54.png" alt="image of .....">
+
+          </div>
+        </div>
+        <p class=" ">Solar Installation</p>
+        <a href=""
+          class="text-decoration-none text-dark  fs-6 w-50 fw-light text-start  d-flex justify-content-evenly align-items-center">Read
+          more <i class="   fa-solid fa-arrow-right-long  "></i></a>
+
+
+      </div>
+
+      <div class="card  service-card   ps-2  " style=" width: 30%;">
+        <div class="card-icon m-2    d-flex justify-content-between align-items-center ">
+          <div class="border redimage flex  rounded-circle">
+            <img class="greenimage1" src="./img/resources/Group 5.png" alt="image of .....">
+
+          </div>
+          <div>
+            <img src="./img/resources/Path 54.png" alt="image of .....">
+
+          </div>
+        </div>
+
+        <p class=" ">Solar Installation</p>
+        <a href=""
+          class="text-decoration-none text-dark fs-6 w-50 fw-light text-start  d-flex justify-content-evenly align-items-center">Read
+          more <i class="  fa-solid fa-arrow-right-long  "></i></a>
+      </div>
+
+    </div>
+    </div>
+    <div class="card-header  container p-2   d-md-flex justify-content-evenly  flex-wrap w-100   "
+      style="width:800px ;">
+
+      <div class="card  service-card   ps-2  " style="width: 30%;">
+        <div class="card-icon m-2    d-flex justify-content-between align-items-center ">
+          <div class="border redimage flex  rounded-circle">
+            <img class="greenimage1" src="./img/resources/Group 5.png" alt="image of .....">
+
+          </div>
+          <div>
+            <img src="./img/resources/Path 54.png" alt="image of .....">
+
+          </div>
+        </div>
+
+        <p class=" ">Solar Installation</p>
+        <a href=""
+          class="text-decoration-none text-dark  fs-6 w-50 fw-light text-start  d-flex justify-content-evenly align-items-center">Read
+          more <i class="   fa-solid fa-arrow-right-long  "></i></a>
+
+
+      </div>
+
+      <div class="card service-card    ps-2  " style="width: 30%;">
+        <div class="card-icon m-2    d-flex justify-content-between align-items-center ">
+          <div class="border redimage flex  rounded-circle">
+            <img class="greenimage1" src="./img/resources/Group 5.png" alt="image of .....">
+
+          </div>
+          <div>
+            <img src="./img/resources/Path 54.png" alt="image of .....">
+
+          </div>
+        </div>
+        <p class=" ">Solar Installation</p>
+        <a href=""
+          class="text-decoration-none text-dark  fs-6 w-50 fw-light text-start  d-flex justify-content-evenly align-items-center">Read
+          more <i class="   fa-solid fa-arrow-right-long  "></i></a>
+
+
+      </div>
+
+      <div class="card  service-card   ps-2  " style=" width: 30%;">
+        <div class="card-icon m-2    d-flex justify-content-between align-items-center ">
+          <div class="border redimage flex  rounded-circle">
+            <img class="greenimage1" src="./img/resources/Group 5.png" alt="image of .....">
+
+          </div>
+          <div>
+            <img src="./img/resources/Path 54.png" alt="image of .....">
+
+          </div>
+        </div>
+        <p class="text-solar ">Solar Installation</p>
+        <a href=""
+          class=" text-decoration-none text-dark fs-6 w-50 fw-light text-start  d-flex justify-content-evenly align-items-center">Read
+          more <i class="  fa-solid fa-arrow-right-long  "></i></a>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </section>
+
+  <!-- fourth page -->
+  <section class="container    me-0 py-3">
+    <div class="row   py-3 ">
+      <div class=" col-md-5 col-12 ps-md-5 ">
+        <p class="green fs-6 ">WHY CHOOSE US</p>
+        <h3 class="fs-3 py-2"><b>Embrace the power the sun </b> <br> with solar energy!</h3>
+        <p class="fontsize py-2  ">Nullam vel nibh facilisis lectus fermentum ultrices quis non risus. Lore m ipsum
+          dolor sit
+          amet, consectetur adipiscing elit. In hac habi </p>
+        <div class=" w-md-50 w-100">
+          <div class="d-flex choose-us ">
+            <img class=" " src="./img/resources/Group 128-1.png" alt="image of .....">
+            <p>Compatitive Price </p>
+          </div>
+          <div class="d-flex choose-us">
+            <img src="./img/resources/Group 128-1.png" alt="image of .....">
+            <p> Quality Product </p>
+          </div>
+          <div class="d-flex choose-us">
+            <img src="./img/resources/Group 128-1.png" alt="image of .....">
+            <p>Quick Delivery </p>
+          </div>
+          <div class="d-flex  choose-us    w-100">
+            <img src="./img/resources/Group 128-1.png" alt="image of .....">
+            <p>High-Tech Manufacturers</p>
+          </div>
+        </div>
+        <a href=""
+          class="text-decoration-none bgorange text-dark  w-50   my-4 py-2 px-1   fw-light text-start  d-flex justify-content-evenly align-items-center">Read
+          more <i class="  fa-solid fa-arrow-right-long    "></i></a>
+
+      </div>
+
+      <div class="col-md-7 col-12 position-relative ">
+        <img src="./img/resources/Image 29.png" alt="image of ....." width="100%">
+
+        <div class="position-absolute bgorange gap-2 d-flex p-1 rounded  align-items-center justify-content-evenly  "
+          style="bottom: 80px; left: -50px;">
+          <div class="w-25"><img class="w-100" src="./img/resources/Promoted.png" alt="image of ....."></div>
+          <div class="text-light ">
+            <h3 class="m-0">12+</h3>
+            <p class="" style="width: 200px;">Years of experience</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- fifth page -->
+  <section class="  work-process bg  flex h-auto ">
+    <div class="work text-center flex">
+      <div class="work-text w-50 py-5">
+        <p class="green fs-5 ">WORK PROCESS</p>
+        <p class="fs-3 py-2  text-light"><b>Our Work</b> Process </p>
+        <p class=" py-2  text-wrap text-light fs-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed de ut
+          labore et dolore magna aliqua Donec scelerisque dolor id Donec scelerisque dolor id </p>
+
+
+        <div class="flex flex-md-row gap-3 py-2 mt-5 ">
+          <div class="round-image  ">
+            <div class="bgwhite rounded-circle  h-25 p-5 position-relative">
+              <img class="m-2" src="./img/resources/Path 82.png" alt="image of ....." srcset="">
+              <div class="text-up position-absolute bgorange rounded-circle w-25 h-25   top-0 end-0 flex   ">
+                <h3 class=" text-light ">01</h3>
+              </div>
+            </div>
+            <p class="text-light">Contact with Our Help Desk</p>
+
+          </div>
+          <img class="topnegative" src="./img/resources/image of dot-dot-dot.svg" alt="image of .....">
+
+          <div class="round-image">
+            <div class="bgwhite rounded-circle  h-25 p-5 position-relative">
+              <img class="m-2" src="./img/resources/Union 1.png" alt="image of ....." srcset="">
+              <div class="text-up  position-absolute bgorange rounded-circle w-25 h-25   top-0 end-0 flex   ">
+                <h3 class=" text-light ">02</h3>
+              </div>
+            </div>
+            <p class="text-light">Make a Deal with Our Company</p>
+          </div>
+          <img class="topnegative" src="./img/resources/image of dot-dot-dot.svg" alt="image of .....">
+
+          <div class="round-image">
+            <div class="bgwhite rounded-circle  h-25 p-5 position-relative">
+              <img class="m-2" src="./img/resources/Union 2.png" alt="image of ....." srcset="">
+              <div class="text-up position-absolute bgorange rounded-circle w-25 h-25   top-0 end-0 flex  ">
+                <h3 class=" text-light ">03</h3>
+              </div>
+            </div>
+            <p class="text-light">Ready to Use Solar Energy</p>
+          </div>
+
+
+
+
+        </div>
+
+  </section>
+
+  <!-- slider page -->
+  <!-- seven page -->
+  <section class="container text-dark  h-100 w-100  py-3">
+    <p class="green">OUR TESTIMONAL</p>
+    <h3><b>What Our Satisfied Client Around </b> <br> The Global Are Our Saying Client</h3>
+    <div class="container  bg    our-testimonal  ">
+      <div class="container">
+        <div class="swiper-container   p-0">
+          <div class="swiper-wrapper">
+
+
+            <div class="swiper-slide">
+              <section class=" w-100 h-auto">
+
+                <section class="container     gap-5   flex ">
+
+
+                  <div class=" w-100 m-0">
+                    <div class=" w-100 text-center bg-light  ">
+                      <div class=" my-3 mx-4"><img src="./img/resources/Path 278.png" alt="image of ....."></div>
+                      <p>Awesome so many in hung easy find well up. So of exquisite my an explained remainder. Dashwood
+                        denoting
+                        securing be on perceive my laughing so</p>
+                    </div>
+                  </div>
+
+
+                  <div>
+                    <div class="flex"><img src="./img/resources/Ellipse 8-1.png" alt="image of ....."></div>
+                    <div>
+                      <h5>Marvin McKinney</h5>
+                      <p class="text-center green">Manager</p>
+                    </div>
+                  </div>
+
+                </section>
+
+
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <section class=" w-100 h-auto">
+
+                <section class="container    gap-5   flex ">
+
+
+                  <div class=" w-100 m-0">
+                    <div class=" w-100 text-center bg-light  ">
+                      <div class=" my-3 mx-4"><img src="./img/resources/Path 278.png" alt="image of ....."></div>
+                      <p>Awesome so many in hung easy find well up. So of exquisite my an explained remainder. Dashwood
+                        denoting
+                        securing be on perceive my laughing so</p>
+                    </div>
+                  </div>
+
+
+                  <div>
+                    <div class="flex"><img src="./img/resources/Ellipse 8-1.png" alt="image of ....."></div>
+                    <div>
+                      <h5>Marvin McKinney</h5>
+                      <p class="text-center green">Manager</p>
+                    </div>
+                  </div>
+
+                </section>
+
+
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <section class=" w-100 h-auto">
+
+                <section class="container    gap-5   flex ">
+
+
+                  <div class=" w-100 m-0">
+                    <div class=" w-100 text-center bg-light  ">
+                      <div class=" my-3 mx-4"><img src="./img/resources/Path 278.png" alt="image of ....."></div>
+                      <p>Awesome so many in hung easy find well up. So of exquisite my an explained remainder. Dashwood
+                        denoting
+                        securing be on perceive my laughing so</p>
+                    </div>
+                  </div>
+
+
+                  <div>
+                    <div class="flex"><img src="./img/resources/Ellipse 8-1.png" alt="image of ....."></div>
+                    <div>
+                      <h5>Marvin McKinney</h5>
+                      <p class="text-center green">Manager</p>
+                    </div>
+                  </div>
+
+                </section>
+
+
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <section class=" w-100 h-auto">
+
+                <section class="container    gap-5   flex ">
+
+
+                  <div class=" w-100 m-0">
+                    <div class=" w-100 text-center bg-light  ">
+                      <div class=" my-3 mx-4"><img src="./img/resources/Path 278.png" alt="image of ....."></div>
+                      <p>Awesome so many in hung easy find well up. So of exquisite my an explained remainder. Dashwood
+                        denoting
+                        securing be on perceive my laughing so</p>
+                    </div>
+                  </div>
+
+
+                  <div>
+                    <div class="flex"><img src="./img/resources/Ellipse 8-1.png" alt="image of ....."></div>
+                    <div>
+                      <h5>Marvin McKinney</h5>
+                      <p class="text-center green">Manager</p>
+                    </div>
+                  </div>
+
+                </section>
+
+
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <section class=" w-100 h-auto">
+
+                <section class="container       flex ">
+
+
+                  <div class=" w-100 m-0">
+                    <div class=" w-100 text-center bg-light ">
+                      <div class=" my-3 mx-4"><img src="./img/resources/Path 278.png" alt="image of ....."></div>
+                      <p>Awesome so many in hung easy find well up. So of exquisite my an explained remainder. Dashwood
+                        denoting
+                        securing be on perceive my laughing so</p>
+                    </div>
+                  </div>
+
+
+                  <div>
+                    <div class="flex"><img src="./img/resources/Ellipse 8-1.png" alt="image of ....."></div>
+                    <div>
+                      <h5>Marvin McKinney</h5>
+                      <p class="text-center green">Manager</p>
+                    </div>
+                  </div>
+
+                </section>
+
+
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <section class=" w-100 h-auto">
+
+                <section class="container    gap-5   flex ">
+
+
+                  <div class=" w-100 m-0">
+                    <div class=" w-100 text-center bg-light ">
+                      <div class=" my-3 mx-4"><img src="./img/resources/Path 278.png" alt="image of ....."></div>
+                      <p>Awesome so many in hung easy find well up. So of exquisite my an explained remainder. Dashwood
+                        denoting
+                        securing be on perceive my laughing so</p>
+                    </div>
+                  </div>
+
+
+                  <div>
+                    <div class="flex"><img src="./img/resources/Ellipse 8-1.png" alt="image of ....."></div>
+                    <div>
+                      <h5>Marvin McKinney</h5>
+                      <p class="text-center green">Manager</p>
+                    </div>
+                  </div>
+
+                </section>
+
+
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <section class=" w-100 h-auto">
+
+                <section class="container    gap-5   flex ">
+
+
+                  <div class=" w-100 m-0">
+                    <div class=" w-100 text-center bg-light  ">
+                      <div class=" my-3 mx-4"><img src="./img/resources/Path 278.png" alt="image of ....."></div>
+                      <p>Awesome so many in hung easy find well up. So of exquisite my an explained remainder. Dashwood
+                        denoting
+                        securing be on perceive my laughing so</p>
+                    </div>
+                  </div>
+
+
+                  <div>
+                    <div class="flex"><img src="./img/resources/Ellipse 8-1.png" alt="image of ....."></div>
+                    <div>
+                      <h5>Marvin McKinney</h5>
+                      <p class="text-center green">Manager</p>
+                    </div>
+                  </div>
+
+                </section>
+
+
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <section class=" w-100 h-auto">
+
+                <section class="container    gap-5   flex ">
+
+
+                  <div class=" w-100 m-0">
+                    <div class=" w-100 text-center bg-light  ">
+                      <div class=" my-3 mx-4"><img src="./img/resources/Path 278.png" alt="image of ....."></div>
+                      <p>Awesome so many in hung easy find well up. So of exquisite my an explained remainder. Dashwood
+                        denoting
+                        securing be on perceive my laughing so</p>
+                    </div>
+                  </div>
+
+
+                  <div>
+                    <div class="flex"><img src="./img/resources/Ellipse 8-1.png" alt="image of ....."></div>
+                    <div>
+                      <h5>Marvin McKinney</h5>
+                      <p class="text-center green">Manager</p>
+                    </div>
+                  </div>
+
+                </section>
+
+
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <section class=" w-100 h-auto">
+
+                <section class="container    gap-5   flex ">
+
+
+                  <div class=" w-100 m-0">
+                    <div class=" w-100 text-center bg-light  ">
+                      <div class=" my-3 mx-4"><img src="./img/resources/Path 278.png" alt="image of ....."></div>
+                      <p>Awesome so many in hung easy find well up. So of exquisite my an explained remainder. Dashwood
+                        denoting
+                        securing be on perceive my laughing so</p>
+                    </div>
+                  </div>
+
+
+                  <div>
+                    <div class="flex"><img src="./img/resources/Ellipse 8-1.png" alt="image of ....."></div>
+                    <div>
+                      <h5>Marvin McKinney</h5>
+                      <p class="text-center green">Manager</p>
+                    </div>
+                  </div>
+
+                </section>
+
+
+              </section>
+            </div>
+            <div class="swiper-slide">
+              <section class=" w-100 h-auto">
+
+                <section class="container    gap-5   flex ">
+
+
+                  <div class=" w-100 m-0">
+                    <div class=" w-100 text-center bg-light ">
+                      <div class=" my-3 mx-4"><img src="./img/resources/Path 278.png" alt="image of ....."></div>
+                      <p>Awesome so many in hung easy find well up. So of exquisite my an explained remainder. Dashwood
+                        denoting
+                        securing be on perceive my laughing so</p>
+                    </div>
+                  </div>
+
+
+                  <div>
+                    <div class="flex"><img src="./img/resources/Ellipse 8-1.png" alt="image of ....."></div>
+                    <div>
+                      <h5>Marvin McKinney</h5>
+                      <p class="text-center green">Manager</p>
+                    </div>
+                  </div>
+
+                </section>
+
+
+              </section>
+            </div>
+          </div>
+
+          <div class="  flex flex-row gap-2 ">
+            <div class="prev m-1  "><i class="fa-regular toggle  fa-circle"></i></div>
+            <div class="next m-1 "><i class="fa-regular  toggle fa-circle"></i></div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+  </section>
+  <!-- Eight page -->
+  <section class="container flex  h-auto my-3">
+    <p class="mt-5 green">OUR BLOG</p>
+    <p class="fs-3 py-  text-ligh"><b>Latest Articles </b> Updated Weekly </p>
+
+
+    <div>
+      <div class="card-header   h-auto d-flex gap-5 flex flex-md-row text-center my-2">
+        <div class="card p-3 " style="width: 18rem; ">
+          <img class="card-img-top" src="./img/resources/Image 10-1@2x.png" alt="Card image cap">
+          <div class="card-body card-text-1  p-0">
+            <h5 class="card-title green fs-6">Aug 26 , 2024</h5>
+            <p class="card-text ">Powering the Energy Generation</p>
+            <p class="card-text m-0 p-0 fs-80">Awesome so many in hung easy find well up. So of exquisite my an
+              explained
+              remainder.</p>
+            <a href="#" class="btn green m-0 p-0">Explore <i class="  fa-solid fa-arrow-right-long    "></i> </a>
+          </div>
+        </div>
+        <div class="card p-3" style="width: 18rem;">
+          <img class="card-img-top" src="./img/resources/Image 11.png" alt="Card image cap">
+          <div class="card-body card-text-1 p-0">
+            <h5 class="card-title green fs-6">Aug 26 , 2024</h5>
+            <p class="card-text ">Powering the Energy Generation</p>
+            <p class="card-text m-0 p-0 fs-80">Awesome so many in hung easy find well up. So of exquisite my an
+              explained
+              remainder.</p>
+            <a href="#" class="btn green m-0 p-0  ">Explore <i class="  fa-solid fa-arrow-right-long    "></i></a>
+          </div>
+        </div>
+        <div class="card p-3" style="width: 18rem;">
+          <img class="card-img-top" src="./img/resources/Image 10-1@2x.png" alt="Card image cap">
+          <div class="card-body card-text-1 p-0">
+            <h5 class="card-title green fs-6">Aug 26 , 2024</h5>
+            <p class="card-text ">Powering the Energy Generation</p>
+            <p class="card-text m-0 p-0 fs-80">Awesome so many in hung easy find well up. So of exquisite my an
+              explained
+              remainder.</p>
+            <a href="#" class="btn  m-0 p-0 green">Explore <i class="  fa-solid fa-arrow-right-long    "></i> </a>
+          </div>
+        </div>
+
+
+      </div>
+      <div class=" text-end">
+        <button class=" border   p-1 my-2  px-3 w-md-25  border-none " style="background-color : #FBB039;"><a
+            class="  text-dark d-flex justify-content-between align-items-center text-decoration-none" href="">Enquiry
+            Now<i class="fa-solid fa-arrow-right text-dark ms-2"></i></a></button>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+  <!-- Nine page -->
+  <section class="container text-center  text-light">
+    <div class="my-5 ">
+      <p class="green">OUR PARTNERS</p>
+      <p class="text-dark"> </p>
+      <p class="fs-3 py- text-dark "><b>SRD Solar</b> Solutions Partner </p>
+
+    </div>
+    <div class="container mb-5 gap-3">
+      <div class="d-md-grid grid">
+        <div class=""> <img class="w-100" src="./img/resources/Image 40.png" alt="image of ....."></div>
+        <div class=""> <img class="w-100" src="./img/resources/Image 41.png" alt="image of ....."></div>
+        <div class=""> <img class="w-100" src="./img/resources/Image 42.png" alt="image of ....."></div>
+        <div class=""> <img class="w-100" src="./img/resources/Image 43.png" alt="image of ....."></div>
+        <div class=""> <img class="w-100" src="./img/resources/Image 44.png" alt="image of ....."></div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ten pages -->
+  <section class="container-fluid flex bgblue py-5">
+    <div class="row container  ">
+      <div class=" col-md-3 col-12 text-light "> 
+
+        
+        <img class="rounded-circle h-md-25 h-25  w-md-25 w-25 m-2"
+          src="./img/resources/logo.png" alt="image of .....">
+        <p>long established fact that a reader will be distracted by the readable content by the readable distrac ted by
+          the readable</p>
+        <div class="fs-4 d-flex gap-3 ">
+
+
+          <a href="" class="text-decoration-none text-light">
+            <i class="fa-brands fa-facebook-f"></i>
+
+          </a>
+          <a href="" class="text-decoration-none text-light">
+            <i class="fa-brands fa-linkedin"></i>
+
+          </a>
+
+          <a href="" class="text-decoration-none text-light">
+            <i class="fa-brands fa-instagram"></i>
+
+          </a>
+          <a href="" class="text-decoration-none text-light">
+            <i class="fa-brands fa-x-twitter"></i>
+
+          </a>
+        </div>
+      </div>
+
+
+      <div class="  col-md-3 col-12">
+        <h4 class="text-light">Useful Links</h4>
+        <div class="links d-block">
+          <a class="text-decoration-none text-light" href="">About US </a><br>
+          <a class="text-decoration-none text-light" href=""> Our Service</a><br>
+          <a class="text-decoration-none text-light" href="">What We Do</a><br>
+          <a class="text-decoration-none text-light" href="">Out Team</a><br>
+          <a class="text-decoration-none text-light" href=""> Contact</a>
+        </div>
+      </div>
+
+      <div class=" col-md-3 col-12">
+        <h4 class="text-light">More Services</h4>
+        <div class="links d-block">
+          <a class="text-decoration-none text-light" href="">Solar material </a><br>
+          <a class="text-decoration-none text-light" href=""> financing Reliability and performance</a><br>
+          <a class="text-decoration-none text-light" href="">Solar Panels</a><br>
+          <a class="text-decoration-none text-light" href="">Charge Controllers</a><br>
+          <a class="text-decoration-none text-light" href=""> Renewable Energy</a>
+        </div>
+      </div>
+      <div class=" col-md-3 col-12 text-light">
+        <h4>Contact Us</h4>
+        <div class="links d-block">
+          <div class="d-flex align-items-start ">
+            <div class=" bgorange rounded-circle flex    p-2 mx-2 "><img src="./img/resources/send-fill (2).png"
+                alt=" loction of imge"></div>
+            <p> <a class="text-decoration-none text-light" href=""> </a> 701, Karma
+              Complex, Kaushambi Towers, Opp. SBI,
+              Mahalaxmi, Paldi, Ahmedabad 380007</p>
+
+          </div>
+          <div class="d-flex align-items-start ">
+            <div class=" bgorange rounded-circle flex    p-2 mx-2 "><img src="./img/resources/telephone-fill (2).png"
+                alt=" loction of imge"></div>
+            <p> <a class="text-decoration-none text-light" href=""> </a> +91 8866477774 <br> +91 9638233249</p>
+
+          </div>
+          <div class="d-flex align-items-start ">
+            <div class=" bgorange rounded-circle flex    p-2 mx-2 "><img src="./img/resources/envelope-fill (4).png"
+                alt=" loction of imge"></div>
+            <p class=""> <a class="text-decoration-none text-light" href="">
+              </a>srdrenewa@gmail.com</p>
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+    <hr class="w-100 border-1 " style=" border:2px solid white">
+    <div class="text-light  text-start  w-100 ">
+      <p class=" text-start">© 2024 srdrenewablepower | All Rights Reserved</p>
+    </div>
+
+
+  </section>
+
+
+
+  <!--  -->
+
+
+
+
+  <!-- script part start from here  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+  <script src="./css/script.js"></script>
+
+
+  <script>
+
+    $(document).ready(function () {
+      // Swiper: Slider
+      new Swiper('.swiper-container', {
+        loop: true,
+        nextButton: '.next',
+        prevButton: '.prev',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 20,
+        // autoplay: {
+
+        //   delay: 0,
+        //   disableOnInteraction: false,
+        // },
+        breakpoints: {
+          1920: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+          1028: {
+            slidesPerView: 2,
+            spaceBetween: 30
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          }
+        }
+      });
+    });
+
+  </script>
+
+
+
+</body>
+
+</html>

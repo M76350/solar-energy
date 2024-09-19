@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+  <style>
+    /* html,
+    body {
+      position: relative;
+      height: 100%;
+    } */
+
+    /* body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    } */
+
+    /* .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      height: 100%;
+    } */
+
+    /* .swiper-container {
+      width: 100%;
+      height: 100%;
+    } */
+
+
+
+    /* Center slide text vertically */
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="swiper-container   p-0">
+      <div class="swiper-wrapper">
+
+
+        <div class="swiper-slide text-light border border-danger bgblue my-3 ">
+          <section class=" w-100 h-auto border p-4">
+            <div class="d-flex justify-content-between px-4 my-2">
+              <div class="flex flex-md-row    gap-3">
+                <div class="p-2 border border-dark rounded-circle "><img style="width: 40px; height: 40px;" src="./img/resources/Group 5.png" alt="" srcset=""></div>
+                <h2>solar installation</h2>
+              </div>
+              <div>
+                <img src="./img/resources/Path 55.png" alt="">
+              </div>
+
+            </div>
+           
+
+           
+
+            <div class="d-flex gap-5">
+              <div>
+                <img src="./img/resources/Image 25.png" alt="">
+  
+              </div>
+              <div>
+  
+                <p>We have been destroying the forests for whatever reasons for many years. Forests that work much like our lungs It is a long established fact that a reader will be distracted by the readable content of a page. </p>
+                <p>Nullam tempor rhoncus ex ut placerat. Praesent vitae augue magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse elit sapien, rhoncus vel fermentum nec, consequat id metus. Vivamus tortor quam, pulvinar posuere nisl at, luctus semper est. Morbi porta pharetra lectus, at posuere nulla pretium quis. Sed porta eros vel felis mattis aliquet. Cras nisi metus, venenatis eget fringilla ut, scelerisque consequat ex.</p>
+                <p> Donec in congue arcu. Cras sit amet lorem maximus, efficitur mauris vel, placerat tellus. Cras gravida sapien nec sem dapibus aliquet. Quisque cursus sodales elementum. Proin feugiat erat nulla, rutrum bibendum elit fringilla et.</p>
+              </div>
+  
+            </div>
+           
+          </section>
+
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- start the processor of slider -->
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Swiper: Slider
+      new Swiper('.swiper-container', {
+        loop: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 20,
+        breakpoints: {
+          1920: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          },
+          1028: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          }
+        }
+      });
+    });
+
+  </script>
+
+
+</body>
+
+</html>
